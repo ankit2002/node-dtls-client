@@ -45,9 +45,9 @@ class Alert extends TLSStruct_1.TLSStruct {
         return new Alert(0, 0);
     }
 }
+exports.Alert = Alert;
 Alert.__spec = {
     level: TypeSpecs.define.Enum("uint8", AlertLevel),
     description: TypeSpecs.define.Enum("uint8", AlertDescription),
 };
 Alert.spec = TypeSpecs.define.Struct(Alert);
-exports.Alert = Alert;
